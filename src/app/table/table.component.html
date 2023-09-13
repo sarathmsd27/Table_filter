@@ -1,0 +1,29 @@
+<div class="container">
+    <label class="h5" style="color: blue; ">Search Here:</label>
+    <input type="search" style="text-align: center;border:solid rgba(0, 0, 0, 0.411)" [(ngModel)]="searchText"  class="form-control" placeholder="Enter the search text">
+    <br>
+    <div class="row">
+    <div class="card">
+    <table class="table table-striped">
+     <thead>
+        <tr>
+            <th scope="col">S.no</th>
+            <th scope="col">First name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone number</th>
+        </tr>
+     </thead>
+     <tbody class="table-body">
+        <tr *ngFor="let item of filterData">
+            <td>{{item.sno}}</td>
+            <td>{{item.fname}}</td>
+            <td>{{item.lname}}</td>
+            <td>{{item.email}}</td>
+            <td>{{item.phonenumber}}</td>
+        </tr>
+     </tbody>
+    </table> 
+</div>
+</div>
+</div>
